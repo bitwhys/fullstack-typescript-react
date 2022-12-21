@@ -4,10 +4,16 @@
     "app",
     "server"
   ],
+  "scripts": {
+    "dev": "concurrently --kill-others 'tsx server/src/index.ts ' 'yarn workspace trello-clone dev'"
+  },
   "repository": "git@github.com:bitwhys/fullstack-typescript-react.git",
   "author": "George Bockari <bitwhys@cr8iv.io> <bitwhys@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^2.8.1"
+    "concurrently": "^7.6.0",
+    "prettier": "^2.8.1",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.3"
   }
 }
